@@ -46,6 +46,7 @@ code {
 
 div.highlight,
 pre {
+    border-radius: var(--radius);
     position: relative;
 }
 

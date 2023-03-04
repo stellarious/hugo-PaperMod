@@ -259,7 +259,7 @@
     border: 1px solid var(--border);
     background: var(--code-bg);
     border-radius: var(--radius);
-    padding: 0.4em;
+    padding: 1em;
 }
 
 .dark .toc {
@@ -267,13 +267,21 @@
 }
 
 .toc details summary {
-    cursor: zoom-in;
+    cursor: pointer;
     margin-inline-start: 20px;
 }
 
+/* .toc details summary::marker {
+    content: '⌵';
+} */
+
 .toc details[open] summary {
-    cursor: zoom-out;
+    cursor: pointer;
 }
+
+/* .toc details[open] summary::marker {
+    content: '⌃';
+} */
 
 .toc .details {
     display: inline;
@@ -282,7 +290,7 @@
 
 .toc .inner {
     margin: 0 20px;
-    padding: 10px 20px;
+    padding: 0px 20px;
 }
 
 .toc li ul {
@@ -292,6 +300,7 @@
 .toc summary:focus {
     outline: 0;
 }
+
 
 .post-footer {
     margin-top: 56px;
