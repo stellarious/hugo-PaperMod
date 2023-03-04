@@ -12,6 +12,10 @@
     display: block;
 }
 
+/* .nav a:hover {
+    color: #2FFF2F;
+} */
+
 .logo,
 #menu {
     display: flex;

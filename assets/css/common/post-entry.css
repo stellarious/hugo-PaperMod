@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 150px;
-    margin: var(--gap) 0 calc(var(--gap) * 2) 0;
+    min-height: 100px;
+    margin: var(--gap) 0 var(--gap) 0;
 }
 
 .first-entry .entry-header {
@@ -38,9 +38,10 @@
     margin-bottom: var(--gap);
     padding: var(--gap);
     background: var(--entry);
-    border-radius: var(--radius);
+    border-radius: calc(var(--radius)*2);
     transition: transform 0.1s;
-    border: 1px solid var(--border);
+    border: calc(var(--radius)/4) var(--primary) solid;
+    box-shadow: 10px 10px var(--primary);
 }
 
 .post-entry:active {
@@ -93,6 +94,7 @@
 
 .entry-cover img {
     border-radius: var(--radius);
+    border: calc(var(--radius)/4) var(--primary) solid;
     pointer-events: none;
     width: 100%;
     height: auto;
