@@ -362,6 +362,7 @@
 
 /* custom shortcode */
 .info-message {
+    margin-top: 1em;
     margin-bottom: 1em;
     padding: 1.5em;
     background: var(--code-bg);
