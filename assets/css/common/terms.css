@@ -7,7 +7,7 @@
 .terms-tags a {
     display: block;
     padding: 3px 10px;
-    background: var(theme);
+    background: var(--tertiary);
     border-radius: var(--radius);
     border: calc(var(--radius)/4) var(--primary) solid;
     box-shadow: 2px 2px var(--primary);
