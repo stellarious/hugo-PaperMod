@@ -7,12 +7,24 @@
 .terms-tags a {
     display: block;
     padding: 3px 10px;
-    background: var(--tertiary);
-    border-radius: 6px;
-    transition: transform 0.1s;
+    background: var(theme);
+    border-radius: var(--radius);
+    border: calc(var(--radius)/4) var(--primary) solid;
+    box-shadow: 2px 2px var(--primary);
+    transition: all 0.2s;
+}
+
+.terms-tags strong::before {
+    all: unset;
+}
+
+.terms-tags a:hover {
+    color: var(--theme);
+    background: var(--primary);
 }
 
 .terms-tags a:active {
-    background: var(--tertiary);
+    /* background: var(--tertiary); */
+    box-shadow: 0px 0px var(--primary);
     transform: scale(0.96);
 }
