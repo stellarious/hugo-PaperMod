@@ -368,7 +368,7 @@
     background: var(--code-bg);
     border-radius: calc(var(--radius)/2);
     border: calc(var(--radius)/4) var(--primary) solid;
-    border-left: var(--radius) var(--primary) solid;
+    border-left: calc(var(--radius)*1.5) var(--primary) solid;
 }
 
 h1:hover .anchor,
