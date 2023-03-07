@@ -146,7 +146,7 @@ strong {
     position: relative;
 }
 
-strong::before {
+strong::after {
     background-color: var(--highlighting);
     content: "";
     position: absolute;
