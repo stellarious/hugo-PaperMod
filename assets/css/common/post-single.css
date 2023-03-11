@@ -207,8 +207,6 @@
     margin: auto 0;
     padding: 10px;
     color: var(--code);
-    /* background: var(--hljs-bg) !important; */
-    border-radius: var(--radius);
     overflow-x: auto;
     word-break: break-all;
     border-radius: var(--radius);
@@ -360,17 +358,6 @@
     margin-inline-end: 12px;
 }
 
-/* custom shortcode */
-.info-message {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 1.5em;
-    background: var(--code-bg);
-    border-radius: calc(var(--radius)/2);
-    border: calc(var(--radius)/4) var(--primary) solid;
-    border-left: calc(var(--radius)*1.5) var(--primary) solid;
-}
-
 h1:hover .anchor,
 h2:hover .anchor,
 h3:hover .anchor,
@@ -429,4 +416,43 @@ h1>a>svg {
 img.in-text {
     display: inline;
     margin: auto;
+}
+/* custom shortcodes */
+.cut,
+.info-message {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1.5em;
+    background: var(--code-bg);
+    border-radius: calc(var(--radius)/2);
+    border: calc(var(--radius)/4) var(--primary) solid;
+    border-left: calc(var(--radius)*1.5) var(--primary) solid;
+}
+
+.cut details summary {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 0.3em;
+}
+
+.cut details[open] summary {
+    margin-bottom: 1.2em;
+}
+
+div.code-link .header-link {
+    padding: 0.4em;
+    background: var(--code-bg);
+    border: calc(var(--radius)/4) var(--primary) solid;
+    border-radius: var(--radius) var(--radius) 0 0;
+    font-size: 12px;
+}
+
+div.code-link div.highlight{
+    margin-top: 0;
+}
+
+div.code-link div.highlight pre code {
+    margin-top: calc((var(--radius)/4 * -1));
+    border-radius: 0 0 var(--radius) var(--radius);
 }
